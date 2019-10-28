@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = {version = "*",editable = true}
+botocore = "*"
+boto3 = "*"
+pytest = "*"
+autopep8 = "*"
+requests = "*"
+
+[packages]
+fastjsonschema = "*"
+
+[requires]
+python_version = "3.7"

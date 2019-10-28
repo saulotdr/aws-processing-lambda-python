@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## Build script to deploy python modules on AWS Lambda
+
+echo "Packaging project"
+
+working_dir=`pwd`
+dist_dir=$working_dir/dist/
+dist_file=$working_dir/aws-lambda-handler.zip
+
+rm -rf dist
+mkdir -p dist
+
+pipenv run pip install -r <(pipenv lock -r) --target dist/
+cp -R src dist
+
+echo "Creating zip"
+cd $dist_dir
+pipenv run python -m compileall .
+zip -rq9 $dist_file .
+
+cd $working_dir
+rm -rf dist/
+echo "Completed"

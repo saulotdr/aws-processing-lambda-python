@@ -1,7 +1,7 @@
 # AWS Log Handler Lambda - using Python 🐍
 
 [![Python version](https://img.shields.io/github/pipenv/locked/python-version/saulotdr/aws-processing-lambda-python?style=for-the-badge)](https://python.org)
-
+[![Known Vulnerabilities](https://snyk.io/test/github/saulotdr/aws-processing-lambda-python/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/saulotdr/aws-processing-lambda-python?targetFile=requirements.txt)
 
 [AWS Lambda](https://aws.amazon.com/lambda/) written in [Python 3.7](https://python.org) to handle logs and send them to Kinesis.
 

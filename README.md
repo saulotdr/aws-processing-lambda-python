@@ -18,7 +18,7 @@ Environment variables to be configured (all are optional):
 | Variable | Description | Default value | Accepted values |
 | -------- | ----------- | ------------- | --------------- |
 | KINESIS_REGION | Kinesis region in AWS. | **eu-west-1** | **string** |
-| KINESIS_STREAM_NAME | Kinesis stream name. | **euqa-klp-elog-stream** | **string** |
+| KINESIS_STREAM_NAME | Kinesis stream name. | **eu-kinesis-stream** | **string** |
 | KINESIS_ENABLED | Flag to enable/disable logs to be sent to it. | **(empty or unset means disabled** | **string** |
 | RETRY_SECONDS_INTERVAL_FROM | Integer representing the initial interval, in seconds, to wait before retrying | **2** | **positive integer** | 
 | RETRY_SECONDS_INTERVAL_TO | Integer representing the maximum interval, in seconds, to wait before retrying | **8** | **positive integer** | 

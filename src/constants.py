@@ -3,7 +3,7 @@ from os import environ as env
 """Environment variables"""
 KINESIS_ENABLED = env['KINESIS_ENABLED'] if 'KINESIS_ENABLED' in env else ''
 KINESIS_REGION = env['KINESIS_REGION'] if 'KINESIS_REGION' in env else 'eu-west-1'
-KINESIS_STREAM_NAME = env['KINESIS_STREAM_NAME'] if 'KINESIS_STREAM_NAME' in env else 'euqa-klp-elog-stream'
+KINESIS_STREAM_NAME = env['KINESIS_STREAM_NAME'] if 'KINESIS_STREAM_NAME' in env else 'eu-kinesis-stream'
 LOGGING_LEVEL = env['LOGGING_LEVEL'] if "LOGGING_LEVEL" in env else 'ERROR'
 RETRY_SECONDS_INTERVAL_FROM = int(env['RETRY_SECONDS_INTERVAL_FROM']) if 'RETRY_SECONDS_INTERVAL_FROM' in env else 2
 RETRY_SECONDS_INTERVAL_TO = int(env['RETRY_SECONDS_INTERVAL_TO']) if 'RETRY_SECONDS_INTERVAL_TO' in env else 8

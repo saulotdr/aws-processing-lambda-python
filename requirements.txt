@@ -1,1 +1,2 @@
+-i https://pypi.org/simple/
 fastjsonschema==2.14.1
